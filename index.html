@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>  </title>
+
+  <style>南充市芦溪中学初2023届毕业
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      margin: 0;
+
+      padding: 0;
+
+      background-color: #f3f3f3;
+
+    }
+
+    header {
+
+      background-color: #333;
+
+      padding: 20px;
+
+      color: #fff;
+
+      text-align: center;
+
+    }
+
+    h1 {
+
+      margin: 0;
+
+      font-size: 24px;
+
+    }
+
+    main {
+
+      max-width: 800px;
+
+      margin: 20px auto;
+
+      padding: 20px;
+
+      background-color: #fff;
+
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .memory {
+
+      margin-bottom: 20px;
+
+      padding-bottom: 20px;
+
+      border-bottom: 1px solid #ccc;
+
+    }
+
+    .memory h2 {
+
+      font-size: 20px;
+
+    }
+
+    .memory p {
+
+      margin-top: 10px;
+
+      font-size: 16px;
+
+    }
+
+   .memory h3 {
+
+      margin-top: 10px;
+
+      font-size: 16px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>南充市芦溪中学初2023届毕业</h1>
+
+  </header>
+
+  <main>
+
+    <div class="memory">
+
+      <h2>回忆1</h2> 
+
+      <p>在南充十二中度过的美好时光，无论是课堂上的学习还是放学后的活动，都让我终生难忘。</p>
+
+     <a href="wite.mp4" > 
+
+     
+
+     <button > 点我看看  </button></a>
+
+      
+
+    </div>
+
+    
+
+    <div class="memory">
+
+      <h2>回忆2</h2>
+
+      <p>那些和好朋友们一起参加校园活动的日子，充满了欢笑、团结和友谊。</p>
+
+     <a href=""><button id="play-video">点我看看</button></a>
+
+    </div>
+
+    <div class="memory">
+
+      <h2>回忆3</h2>
+
+      <p>和班级一起经历的毕业旅行，让我们更加紧密地团结在一起，留下了美好的回忆。</p>
+
+      <a href=""><button>点我看看</button></a>
+
+      </div>
+
+      
+
+      <div class="memory"
+
+     <h3>回忆4</h3>
+
+    <p>让我们再去看一看校园吧</p>
+
+    <a href="">  <button id="play-video">点我看看</button></a>
+
+ 
+
+    <div id="photo-gallery" style="display: none;">
+
+      <img src="" alt="Cache_-110f108636f9191e.jpg" class="photo-gallery-img">
+
+   <img src=""/>
+
+     
+
+      <div>
+
+        <button onclick="previousPhoto()">上一张</button>
+
+        <button onclick="nextPhoto()">下一张</button>
+
+      </div>
+
+   
+
+  </main>
+
+<script>
+
+    var photos = document.getElementById('photo-gallery').getElementsByTagName('img');
+
+    var currentPhotoIndex = 0;
+
+    function showPhotoGallery() {
+
+      document.getElementById('photo-gallery').style.display = 'block';
+
+    }
+
+    function hidePhotoGallery() {
+
+      document.getElementById('photo-gallery').style.display = 'none';
+
+    }
+
+    function showPhoto(index) {
+
+      hidePhotoGallery();
+
+      currentPhotoIndex = index;
+
+      photos[currentPhotoIndex].style.display = 'block';
+
+    }
+
+    function hidePhoto() {
+
+      photos[currentPhotoIndex].style.display = 'none';
+
+    }
+
+    function previousPhoto() {
+
+      hidePhoto();
+
+      currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+
+      showPhoto(currentPhotoIndex);
+
+    }
+
+    function nextPhoto() {
+
+      hidePhoto();
+
+      currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+
+      showPhoto(currentPhotoIndex);
+
+    }
+
+  </script>
+
+</body>
+
+     </div>
+
+    
+
+  </main>
+
+</body>
+
+</html>
